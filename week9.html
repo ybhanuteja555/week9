@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+* {box-sizing: border-box}
+.container {
+	position: absolute;
+	border-radius: 5px;
+	left:30%;
+	background-color: #f2f2f2;
+	width:550px;
+	height:700px;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+input,
+.btn {
+  	width: 85%;
+  	padding: 10px;
+  	border: none;
+  	border-radius: 4px;
+  	opacity: 0.85;
+  	display: inline-block;
+  	font-size: 17px;
+  	line-height: 20px;
+  	text-decoration: none; 
+  	margin-left:40px;
+  	margin-bottom:20px;
+  	margin-right:40px; 
+}
+
+input:hover,
+.btn:hover {
+  	opacity: 1;
+}
+
+/* add appropriate colors to fb, google and epam buttons */
+.fb {
+  background-color: blue;
+  text-align:center;
+  color: white;
+  margin-top:5px;
+  margin-bottom:10px;
+  margin-left:40px;
+}
+
+.google {
+  background-color: red;
+  color: white;
+  text-align:center;
+  margin-left:40px;
+  margin-bottom:45px;
+}
+.header {
+  background-color:skyblue;
+  padding: 7px 7px 7px 7px;
+  height:40px;
+  margin-bottom:25px;
+}
+
+#s {
+  color: white;
+  float:left;
+  line-height:20px;
+  margin-bottom:25px;
+  position:relative;
+  margin-left:35px;
+}
+
+.epam {
+  background-color: green;
+  color: white;
+  text-align:center;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: skyblue;
+}
+input[type=password] {
+
+margin-bottom: 30px;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+}
+#ele1 {
+  color:blue;
+  margin-top:10px;
+  margin-bottom:50px;
+  float:left;
+  margin-left:45px;
+  text-decoration:"none";
+}
+#ele2 {
+  float:right;
+  color:blue;
+  margin-bottom:50px;
+  margin-top:10px;
+  margin-right:45px;
+}
+#c {
+  float:right;
+  line-height:20px;
+  margin-bottom:25px;
+  color:red;
+  margin-right:40px;
+}
+h4 { 
+  position:relative;
+  margin-top:50px;
+  margin:bottom:50px;
+  text-align:center;
+} 
+h4:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 240px;
+  height: 2px;
+  background: #000;
+  margin-left:40px;
+}
+h4:after { 
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 150px;
+  height: 2px;
+  background: #000;        
+  margin-right:40px;
+}
+.input-icons i { 
+   position: absolute;
+} 
+          
+.input-icons {
+   margin-right:20px;
+   margin-bottom: 10px; 
+} 
+.icon { 
+    padding: 10px;
+    margin-left:450px;
+    margin-right:40px; 
+    color: green; 
+    min-width: 50px; 
+    text-align: center; 
+   
+   z-index:1;	    
+} 
+ .input-field { 
+    width:88%;
+    margin-right:0px; 
+    padding: 10px; 
+    text-align: center; 
+} 
+</style>
+</head>
+<body>
+   <div class="container">
+	<form action="/action_page.php" align:center>
+  	    <div class="header">
+	       <div id="s">SIGN IN </div>
+               <div id="c">X</div>
+   	    </div>
+	    <div class="input-icons"> 
+	     	<i class="fa fa-envelope icon"> </i> 
+  	    	<input class="input-field" type="text" name="username" placeholder="mail@example.com" required margin-bottom=5px>
+            </div>
+	    <div class="input-icons"> 
+		 <i class="fa fa-key icon"> </i> 
+	    	<input class="input-field" type="password" name="password" placeholder="Password" required margin-bottom:20px>
+            </div>
+	    <input type="submit" value="SIGN IN">
+	    <div class="forgot">
+	       <div id="ele1">
+      	          <a href="#">Forgot your password?</a>
+	       </div>
+	       <div id="ele2">
+	         <a href="#">Register?</a>
+	       </div>
+	    </div>
+	    <h4> OR </h4>
+	    <div class="bottom-container">
+                 <a href="#" class="fb btn">
+                   <i class="fa fa-facebook fa-fw"></i> 
+                 </a>
+                 <a href="#" class="google btn">
+                    <i class="fa fa-google fa-fw""></i> 
+                 </a>
+                 <a href="#" class="epam btn">
+                    <i></i> &lt EPAM LOGIN &gt
+                 </a>
+           </div>
+ </form>
+</div>
+</body>
+</html> 
